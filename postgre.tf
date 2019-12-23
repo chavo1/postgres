@@ -3,7 +3,7 @@
 resource "aws_db_instance" "dev" {
   identifier                = "dev"
   allocated_storage         = 1
-  storage_type              = "gp2"
+  storage_type              = "io1"
   engine                    = "aurora-postgresql"
   engine_version            = "9.6.12"
   instance_class            = "db.r4.large"
